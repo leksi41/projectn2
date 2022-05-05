@@ -1,0 +1,2 @@
+INSERT INTO USER(name,password)
+VALUE
