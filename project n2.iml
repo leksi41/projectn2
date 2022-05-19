@@ -9,6 +9,7 @@
         <webroots>
           <root url="file://$MODULE_DIR$/web" relative="/" />
         </webroots>
+        <sourceRoots />
       </configuration>
     </facet>
   </component>
@@ -29,7 +30,9 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="jstl" level="project" />
     <orderEntry type="library" name="servlet-api" level="project" />
+    <orderEntry type="library" name="jstl-1.2" level="project" />
+    <orderEntry type="library" name="jsp-api" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.28" level="project" />
   </component>
 </module>

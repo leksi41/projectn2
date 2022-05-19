@@ -11,15 +11,24 @@ public class DBConnection {
 
     public static final DBConnection INSTANCE = new DBConnection();
 
+    static {
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     private DBConnection() {
     }
 
     public Connection getConnection() {
-        try (Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD)) {
-            return connection;
+        Connection connection = null;
+        try {
+            connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
         } catch (SQLException e) {
             System.out.println("Db not connection");
         }
-        return null;
+        return connection;
     }
 }
