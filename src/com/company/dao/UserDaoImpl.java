@@ -1,7 +1,6 @@
 package com.company.dao;
 
 import com.company.model.User;
-import com.mysql.cj.xdevapi.PreparableStatement;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -62,8 +61,8 @@ public class UserDaoImpl implements UserDao{
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()){
                 int id = resultSet.getInt(1);
-                String name = resultSet.getString("2");
-                String password = resultSet.getString("3");
+                String name = resultSet.getString(2);
+                String password = resultSet.getString(3);
                 users.add(new User(id,name,password));
             }
         }catch (SQLException exe){
@@ -80,8 +79,8 @@ public class UserDaoImpl implements UserDao{
             preparedStatement.setInt(1,id);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()){
-                String name = resultSet.getString("2");
-                String password = resultSet.getString("3");
+                String name = resultSet.getString(2);
+                String password = resultSet.getString(3);
                 user = new User(id,name,password);
             }
         }catch (SQLException exe){

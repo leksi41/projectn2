@@ -13,12 +13,24 @@ public class AdsDaoImpl implements AdsDao {
     private static final String SELECT_ALL_Ads = "SELECT * FROM Ads";
 
     @Override
-    public void insert(Ads user) {
-
+    public void insert(Ads ads) {
+        try (Connection connection = DBConnection.INSTANCE.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(
+                     "INSERT INTO Ads(title,subtitle,describtion,price,user_id) VALUES (?,?,?,?,?)")) {
+            preparedStatement.setString(1, ads.getTitle());
+            preparedStatement.setString(1, ads.getSubtitle());
+            preparedStatement.setString(1, ads.getDescription());
+            preparedStatement.setDouble(1, ads.getPrice());
+            preparedStatement.setInt(1, 1);
+            System.out.println(preparedStatement);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
-    public boolean update(Ads user) {
+    public boolean update(Ads ads) {
         return false;
     }
 

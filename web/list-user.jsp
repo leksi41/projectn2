@@ -31,7 +31,7 @@
                     </td>
 
                     <td>
-                        <c:out value = "${user.login}"/>
+                        <c:out value = "${user.name}"/>
                     </td>
 
                     <td>
