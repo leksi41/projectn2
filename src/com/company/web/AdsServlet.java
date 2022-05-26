@@ -37,7 +37,7 @@ public class AdsServlet extends HttpServlet {
             case "/ads-new":
                 showAdsForm(req, resp);
                 break;
-            case "ads-add":
+            case "/ads-add":
                 addAds(req, resp);
                 break;
         }

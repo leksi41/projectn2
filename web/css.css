@@ -1,0 +1,95 @@
+.navbar{
+height: 80px;
+text-align: center;
+background-color:#1a1c1b;
+top: 30px;
+position: relative;
+}
+
+.btn-success{
+  position: absolute;
+  margin-top: 44px;
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.auth{
+position: absolute;
+top: 40px;
+right: 40px;
+height: 50px;
+}
+
+.photo{
+width: 400px;
+height: 400px;
+}
+
+.container{
+position: relative;
+}
+
+.nav-link{
+margin: 0 100px;
+}
+
+
+.zagolovok{
+padding-left: 415px;
+padding-right:10px;
+margin-top: -350px;
+}
+
+
+.container2{
+padding-left: 140px;
+padding-right:10px;
+margin-top: 400px;
+}
+
+.auth2{
+position: absolute;
+right: 0px;
+}
+
+.auth3{
+position: absolute;
+right: 0px;
+}
+
+
+.cena{
+padding-left:900px;
+padding-right:10px;
+top: 200px;
+position: absolute;
+}
+
+.cena2{
+padding-left:1180px;
+padding-right:10px;
+margin-top: -130px;
+position: absolute;
+}
+
+
+.logo img{
+  width:   300px;
+}
+.logo{
+  margin-left:   50px;
+  margin-top:   20px;
+  width : 300px;
+}
+
+.container{
+  margin-top: 200px;
+}
+
+footer{
+  padding: 60px;
+  text-align: center;
+  background-color: black;
+  margin-top: 160px;
+}

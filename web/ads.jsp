@@ -14,12 +14,12 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="<%=URL%>/style1.css">
+    <link rel="stylesheet" type="text/css" href="<%=URL%>/css.css">
 </head>
 <body>
 <div class="header">
     <div class="logo">
-        <img src="img\logo.png" alt="картинка">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/768px-Steam_icon_logo.svg.png" alt="картинка">
     </div>
 
     <div class="auth">
